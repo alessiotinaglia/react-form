@@ -42,7 +42,7 @@ const cityImages = [
         description: "Londra di notte è un mix di eleganza e modernità, con il famoso Big Ben illuminato.",
         data: "Visitata Maggio 2020",
         tags: ["html"],
-        published: false,
+        published: true,
     }
 ];
 
