@@ -41,12 +41,11 @@
   color: #888;
 } */
 
-body{
+body {
   background-color: gray;
 }
 
-
-.card{
+.card {
   max-width: 800px;
   margin: 0 auto;
   border-radius: 15px;
@@ -54,23 +53,23 @@ body{
   background-color: rgb(0, 0, 0);
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.7);
   color: white;
+  aspect-ratio: 16/9;
 }
 
-h1{
+h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px;
+  padding-top: 15px;
 }
 
-.card-foto{
-  border-radius: 15px 15px 0px 0px ;   
+.card-foto {
+  border-radius: 15px 15px 0px 0px;
   height: 100%;
-  object-fit: contain;
   cursor: pointer;
 }
 
-footer{
+footer {
   margin-top: 50px;
   height: 120px;
   background-color: rgb(38, 36, 36);
@@ -80,3 +79,6 @@ footer{
   align-items: center;
 }
 
+p {
+  height: 50px;
+}
