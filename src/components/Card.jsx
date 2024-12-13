@@ -1,7 +1,7 @@
 
 function card({ cityImages }) {
     return (
-        <div className="row p-5">
+        <div className="row container container-custom">
             {cityImages.map((element) => (
                 <div key={element.id} className="col-12 col-sm-6 col-md-4">
                     <div className="card">

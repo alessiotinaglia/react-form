@@ -4,7 +4,7 @@ import cityImages from "../dati/array";
 function main() {
         return (
         <main>
-            <Card cityImages = {cityImages} />
+            <Card cityImages={cityImages} />
         </main>
     )
 }
