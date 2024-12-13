@@ -1,12 +1,16 @@
 import Card from "./Card";
 import cityImages from "../dati/array";
 
-function main() {
-        return (
+function Main() {
+    return (
         <main>
-            <Card cityImages={cityImages} />
+            <div className="row container container-custom">
+                {cityImages.map((element) => (
+                    <Card key={element.id} cityImage={element} />
+                ))}
+            </div>
         </main>
-    )
+    );
 }
 
-export default main;
+export default Main;
