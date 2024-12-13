@@ -1,4 +1,5 @@
 
+
 function Card({ cityImage }) {
     return (
         <div className="col-12 col-sm-6 col-md-4">
@@ -8,10 +9,10 @@ function Card({ cityImage }) {
                     <h5>{cityImage.title}</h5>
                     <p>{cityImage.description}</p>
                     <a href="#" className="btn btn-primary me-2">{cityImage.data}</a>
-                    <a href="#" className="btn btn-success me-2">Sopri itinerario</a>
+                    <a href="#" className="btn btn-success me-2">Scopri itinerario</a>
+                    </div>
                 </div>
             </div>
-        </div>
     );
 }
 

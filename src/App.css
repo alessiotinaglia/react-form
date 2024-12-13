@@ -62,8 +62,6 @@ h1 {
   max-width: 1500px;
 }
 
-
-
 .card {
   border-radius: 15px;
   margin-bottom: 45px;
@@ -72,8 +70,6 @@ h1 {
   color: white;
   aspect-ratio: 16/9;
 }
-
-
 
 .card-foto {
   border-radius: 15px 15px 0px 0px;
