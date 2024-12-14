@@ -9,12 +9,43 @@
     aspect-ratio: 16/9;
 }
 
-.cardFotoCustom{
+.cardFotoCustom {
     border-radius: 15px 15px 0px 0px;
     height: 100%;
     cursor: pointer;
 }
 
+.cardCustom:hover {
+    scale: 1.05;
+    z-index: 1000;
+}
+
 p {
     height: 50px;
+}
+
+/* Colori tag */
+
+.vacanze {
+    color: green;
+}
+
+.vacanzaPerfetta {
+    color: rgb(223, 3, 139);
+}
+
+.viaggio {
+    color: yellow;
+}
+
+.allaScoperta {
+    color: blue;
+}
+
+.vacanzeInFamiglia{
+    color: red;
+}
+
+.avventure{
+    color: deepskyblue;
 }

@@ -1,4 +1,3 @@
-
 import style from './Card.module.css';
 
 function Card({ cityImage }) {
@@ -11,6 +10,30 @@ function Card({ cityImage }) {
                     <p>{cityImage.description}</p>
                     <a href="#" className="btn btn-primary me-2">{cityImage.data}</a>
                     <a href="#" className="btn btn-success me-2">Scopri itinerario</a>
+                    <div className="tags mt-3">
+                        {cityImage.tags.map((tag) => {
+                            let tagClass = '';
+                            // filtra per trovare il tag giusto 
+                            if (tag === "#Vacanze") {
+                                tagClass = `${style.vacanze}`;
+                            } else if (tag === "#Viaggio") {
+                                tagClass = `${style.viaggio}`;
+                            } else if (tag === "#VacanzaPerfetta") {
+                                tagClass = `${style.vacanzaPerfetta}`;
+                            } else if (tag === "#AllaScoperta") {
+                                tagClass = `${style.allaScoperta}`;
+                            } else if (tag === "#VacanzeInFamiglia") {
+                                tagClass = `${style.vacanzeInFamiglia}`;
+                            } else if (tag === "#Avventure") {
+                                tagClass = `${style.avventure}`;
+                            }
+                            return (
+                                <span key={tag} className={`${tagClass}`}>
+                                    {tag}
+                                </span>
+                            );
+                        })}
+                    </div>
                 </div>
             </div>
         </div>
@@ -18,3 +41,4 @@ function Card({ cityImage }) {
 }
 
 export default Card;
+
