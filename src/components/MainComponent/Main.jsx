@@ -3,6 +3,7 @@ import cityImages from "../../dati/array";
 import style from './Main.module.css';
 
 function Main() {
+    // filtra e con il valore buleano viene stampato se risulta true 
     const publishedCityImages = cityImages.filter(city => city.published)
     return (
         <main>
