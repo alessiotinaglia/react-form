@@ -1,0 +1,15 @@
+/* Footer component css */
+
+.textCustom {
+  padding: 10px 55px;
+}
+
+footer {
+  margin-top: 50px;
+  height: 120px;
+  background-color: rgb(38, 36, 36);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

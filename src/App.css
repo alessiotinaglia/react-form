@@ -41,56 +41,7 @@
   color: #888;
 } */
 
+/* css globale della pagina intera */
 body {
   background-color: gray;
-}
-/* Header component css */
-
-h1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
-}
-
-/* Main component css */
-/* Card component css */
-/* Footer component css */
-
-.container-custom{
-  margin: 0 auto;
-  max-width: 1500px;
-}
-
-.card {
-  border-radius: 15px;
-  margin-bottom: 45px;
-  background-color: rgb(0, 0, 0);
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.7);
-  color: white;
-  aspect-ratio: 16/9;
-}
-
-.card-foto {
-  border-radius: 15px 15px 0px 0px;
-  height: 100%;
-  cursor: pointer;
-}
-
-footer {
-  margin-top: 50px;
-  height: 120px;
-  background-color: rgb(38, 36, 36);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-p {
-  height: 50px;
-}
-
-.text-custom{
-  padding: 10px 55px;
 }
