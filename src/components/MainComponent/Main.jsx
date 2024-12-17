@@ -5,21 +5,32 @@ import Form from './ArticleForm';
 import { useState } from "react";
 
 function Main() {
-    // filtra e con il valore buleano viene stampato se risulta true 
-    const _publishedCityImages = cityImages.filter(city => city.published)
+    // Filtra e salva le immagini pubblicate
+    const _publishedCityImages = cityImages.filter(city => city.published);
     const [publishedCityImages, setPublishedCityImages] = useState(_publishedCityImages);
 
+    // Funzione per aggiungere un nuovo articolo
     const handleArticleSubmit = (newCityImage) => {
         console.log(newCityImage);
         setPublishedCityImages([...publishedCityImages, newCityImage]);
     }
+
+    // Funzione per eliminare una città
+    const handleDelete = (id) => {
+        const updatedImages = publishedCityImages.filter(city => city.id !== id);
+        setPublishedCityImages(updatedImages);
+    };
 
     return (
         <main>
             <Form publishedCityImages={publishedCityImages} onSubmit={handleArticleSubmit} />
             <div className={`row container ${style.containerCustom}`}>
                 {publishedCityImages.map((element) => (
-                    <Card key={element.id} cityImage={element} />
+                    <Card
+                        key={element.id}
+                        cityImage={element}
+                        onDelete={handleDelete}
+                    />
                 ))}
             </div>
         </main>
