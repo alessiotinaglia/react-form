@@ -33,7 +33,7 @@ const cityImages = [
         description: "Le luci spettacolari dei grattacieli e la vibrante vita notturna rendono Dubai un luogo incredibile.",
         data: "Visitata Novembre 2019",
         tags: ["#Viaggio"],
-        published: false,
+        published: true,
     },
     {
         id: 5,
@@ -42,7 +42,7 @@ const cityImages = [
         description: "Londra di notte è un mix di eleganza e modernità, con il famoso Big Ben illuminato.",
         data: "Visitata Maggio 2020",
         tags: ["#Viaggio","#Avventure"],
-        published: false,
+        published: true,
     }
 ];
 
