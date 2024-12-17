@@ -32,7 +32,7 @@ function Card({ cityImage }) {
                                     {tag}
                                 </span>
                             );
-                        })}
+                        })}       
                     </div>
                 </div>
             </div>
