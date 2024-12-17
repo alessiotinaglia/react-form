@@ -13,7 +13,7 @@ function Card({ cityImage, onDelete }) {
                     <button
                         id="button"
                         className="delete icon btn btn-danger delete-btn"
-                        onClick={() => onDelete(cityImage.id)} // Passiamo l'id dell'immagine al genitore
+                        onClick={() => onDelete(cityImage.id)}
                     >
                         Elimina
                     </button>
