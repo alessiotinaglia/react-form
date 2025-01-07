@@ -20,7 +20,6 @@ function ArticleForm({ publishedCityImages, onSubmit }) {
             tags: ["#Vacanze", "#Viaggio", "#VacanzaPerfetta"],
             published: true,
         };
-
         onSubmit(newCityImage);
 
     };
